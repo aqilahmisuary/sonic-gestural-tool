@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Base code started from web-develop-t3g4-gue Group project from the first half of the Web Development Course
+  Then refined and changed accordingly. -->
+
+<!-- head -->
+
+<head>
+  <!-- meta charset defines the character set for the page -->
+  <meta charset="UTF-8" />
+  <!-- meta http-equiv="X-UA-Compatible" content="IE=edge" defines compatibility the page with internet explorer IE-edge means IE Edge Version -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta viewport defines responsiveness of the page on different devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title OF  The Page-->
+  <title>Sonic Gestural Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+      <!-- Load TensorFlow.js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/3.13.0/tf.js" integrity="sha512-ZBd+CfuJTqQfXvXAHE4P+g2LZR855Hm2hmqVP2oL7/q9nCYaRJH7ghb4eKx8ZsR8vyYBWVGboEaBspKiVXFnrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Load MobileNet -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <!-- Load KNN Classifier -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+    <!-- Load HowlerJS -->
+    <script src="howlercore.js"></script>
+  <link rel="stylesheet" href="assets/styles/index.css" />
+</head>
+<!-- end of head -->
+
+<!-- body -->
+
+<body class="home">
+
+  <!-- main -->
+  <main>
+
+    <!-- page banner -->
+    <section class="aftermath-banner" id="plugin-banner">
+      <div class="aftermath-container">
+        <div class="aftermath-info-box">
+        </div>
+      </div>
+    </section>
+    <!-- end of page banner -->
+
+    <!-- plugins divider -->
+    <section class="aftermath-news-container">
+      <div class="aftermath-container">
+        <h2>Sonic Gestural Tool</h2>
+      </div>
+    </section>
+
+    <!-- plugin of the months section -->
+    <section class="aftermath-features-container">
+
+      <div class="aftermath-container">
+        <div class="aftermath-section-header">
+          <!-- adds space -->
+        </div>
+        <!-- plugin of the month mar -->
+        <div class="aftermath-sub-container">
+          <article class="aftermath-sub-news">
+            <!-- <img class="news-01-img" id="top-pedal-news" src="assets/images/plugin-mar.png" alt="News" /> -->
+            <video autoplay playsinline muted id="webcam" class="aftermath-sub-news" width="600" height="600" ></video>
+          </article>
+
+          <article class="aftermath-sub-news" id="plugin-feb">
+            <button id="class-gyan" class="button-data">Add Gesture 1</button>
+            <button id="class-shuni" class="button-data">Add Gesture 2</button>
+            <button id="class-surya" class="button-data">Add Gesture 3</button>
+            <button id="class-buddhi" class="button-data">Add Gesture 4</button>
+            <button id="class-nothing" class="button-data">Add Nothing</button>
+
+            
+            <button id="save" class="button">Save Dataset</button>
+            <button id="start" class="button">Start Audio</button>
+            <button id="stop" class="button">Stop Audio</button>
+            <input type="button" id="dwn-btn" class="button" value="Download Dataset"/>
+            <!-- <div class="audio-files">Audio File 1</div>
+            <div class="audio-files">Audio File 2</div>
+            <div class="audio-files">Audio File 3</div>
+            <div class="audio-files">Audio File 4</div> -->
+
+            <!-- <h1 id="plugin-of-the-month">Plugin of the Month</h1>
+            <h4 id="top-plugin-header">The best free echo VST on the market right now, Valhalla Freq Echo</h3>
+              <p id="top-plugin-subtitle">There’s no shortage of innovative VST plugins out there right now. The hardest
+                part is picking from the thousands of available ones.</p> -->
+          </article>
+
+          <article class="aftermath-sub-news" class="console">
+
+            <div id="console"></div>
+
+          </article>
+         
+        </div>
+
+        <div class="aftermath-sub-container">
+          <input  id="audioFileChooser" class="button" type="file" onchange="readFile1(this.files);">
+          <div id="audio1" class="audio-files">Audio File 1</div>
+          <input  id="audioFileChooser" class="button" type="file" onchange="readFile2(this.files);">
+          <div id="audio2" class="audio-files">Audio File 2</div>
+          <input  id="audioFileChooser" class="button" type="file" onchange="readFile3(this.files);">
+          <div id="audio3" class="audio-files">Audio File 3</div>
+          <input  id="audioFileChooser" class="button" type="file" onchange="readFile4(this.files);">
+          <div id="audio4" class="audio-files">Audio File 4</div>
+        </div>
+
+      </div>
+    </section>
+    <!-- end of plugin of the month section -->
+
+
+  </main>
+  <!-- end of main -->
+
+
+
+  <script src="assets/scripts/index.js"></script>
+</body>
+<!-- end of body -->
+
+</html>
+<!-- end of page -->

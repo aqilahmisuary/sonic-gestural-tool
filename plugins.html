@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Base code started from web-develop-t3g4-gue Group project from the first half of the Web Development Course
+  Then refined and changed accordingly. -->
+
+<!-- head -->
+
+<head>
+  <!-- meta charset defines the character set for the page -->
+  <meta charset="UTF-8" />
+  <!-- meta http-equiv="X-UA-Compatible" content="IE=edge" defines compatibility the page with internet explorer IE-edge means IE Edge Version -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta viewport defines responsiveness of the page on different devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title OF  The Page-->
+  <title>Aftermath Plugins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/index.css" />
+</head>
+<!-- end of head -->
+
+<!-- body -->
+
+<body class="home" onload="onLoad()">
+  <!-- header -->
+  <header>
+    <!--Above header-->
+    <div class="aftermath-above-header-wrap">
+      <div class="aftermath-container">
+        <!--Add space above header-->
+      </div>
+    </div>
+
+    <!--Main Menu-->
+    <div class="aftermath-main-header-wrap aftermath-desktop-menu">
+      <!--Content container-->
+      <div class="aftermath-container-nav">
+        <div class="aftermath-grid-row-nav">
+
+          <!--Search icon-->
+          <a href="#" class="search-icon" id="search-img" onclick="toggleSearchbar()">
+            <img class="search-icon-img" src="assets/images/search.png" alt="Search" />
+          </a>
+
+          <a href="./" class="aftermath-logo-link">
+            <!-- img tag is used add images in the web page alt tag is the text about the image which can be very helpful for search engines -->
+            <img src="./assets/images/aftermath_logo.png" alt="Aftermath Logo" class="aftermath-logo" />
+          </a>
+          <!-- nav tag is used to add navigations -->
+          <nav class="aftermath-main-nav">
+            <!-- ul is un-ordered list all the items will start with bullets (default / custom) -->
+            <ul class="aftermath-main-nav-container">
+              <!-- li is list item inside list item we can put text / links -->
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./news.html">News</a></li>
+              <li><a href="./pedals.html">Pedals</a></li>
+              <li><a href="./plugins.html">Plugins</a></li>
+
+              <!-- a link with # means this link is target specific part of the page -->
+
+              <li class="toggle-icon-container">
+                <a href="javascript:void(0);" class="toggle-icon" onclick="mobileMenuHanlder()">
+                  <img src="assets/images/menu-toggle.svg" alt="menu toggle icon" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="dropdown-search" id="dropdown">
+          <input class="search-bar" type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <div id="search-dropdown-content" onmouseleave="searchContentDisplay(`none`)">
+            <!-- Search items are dynamically added here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu-->
+    <div class="aftermath-mobile-menu">
+      <!-- nav tag is used to add navigations -->
+      <nav class="aftermath-main-nav">
+        <!-- ul is un-ordered list all the items will start with bullets (default / custom) -->
+        <ul class="aftermath-main-nav-container">
+          <!-- li is list item inside list item we can put text / links -->
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./news.html">News</a></li>
+          <li><a href="./pedals.html">Pedals</a></li>
+          <li><a href="./plugins.html">Plugins</a></li>
+          <!-- a link with # means this link is target specific part of the page -->
+
+      </nav>
+    </div>
+  </header>
+  <!-- end of header -->
+
+  <!-- main -->
+  <main>
+
+    <!-- page banner -->
+    <section class="aftermath-banner" id="plugin-banner">
+      <div class="aftermath-container">
+        <div class="aftermath-info-box">
+        </div>
+      </div>
+    </section>
+    <!-- end of page banner -->
+
+    <!-- plugins divider -->
+    <section class="aftermath-news-container">
+      <div class="aftermath-container">
+        <h2>Plugins</h2>
+      </div>
+    </section>
+
+    <!-- plugin of the months section -->
+    <section class="aftermath-features-container">
+
+      <div class="aftermath-container">
+        <div class="aftermath-section-header">
+          <!-- adds space -->
+        </div>
+        <!-- plugin of the month mar -->
+        <div class="aftermath-sub-container">
+          <article class="aftermath-sub-news" id="plugin-mar">
+            <img class="news-01-img" id="top-pedal-news" src="assets/images/plugin-mar.png" alt="News" />
+            <h1 id="plugin-of-the-month">Plugin of the Month</h1>
+            <h4 id="top-plugin-header">The best free echo VST on the market right now, Valhalla Freq Echo</h3>
+              <p id="top-plugin-subtitle">There’s no shortage of innovative VST plugins out there right now. The hardest
+                part is picking from the thousands of available ones.</p>
+          </article>
+        </div>
+        <!-- plugin of the month feb -->
+        <div class="aftermath-sub-container">
+          <article class="aftermath-sub-news" id="plugin-feb">
+            <img class="news-01-img" id="top-pedal-news" src="assets/images/plugin-feb.png" alt="News" />
+            <h1 id="plugin-of-the-month">Plugin of the Month</h1>
+            <h4 id="top-plugin-header">FabFilter Pro-Q: Unrivalled sound and workflow</h3>
+              <p id="top-plugin-subtitle">An equalizer is probably the tool you use most while mixing and mastering, so
+                you need the best of the best.</p>
+          </article>
+        </div>
+
+        <!-- plugin of the month jan -->
+        <div class="aftermath-sub-container">
+          <article class="aftermath-sub-news" id="plugin-jan">
+            <img class="news-01-img" id="top-pedal-news" src="assets/images/plugin-jan.png" alt="News" />
+            <h1 id="plugin-of-the-month">Plugin of the Month</h1>
+            <h4 id="top-plugin-header">Presenting soothe2: Smoothens harshness, save time</h3>
+              <p id="top-plugin-subtitle">soothe2 saves time and effort in audio work. It works wonders on anything from
+                sound design and post-production to the most demanding mastering applications.</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+    <!-- end of plugin of the month section -->
+
+  </main>
+  <!-- end of main -->
+
+  <!-- footer -->
+  <footer>
+    <!--Content container-->
+    <div class="aftermath-container">
+      <div class="aftermath-grid-row-3">
+        <div class="social-container">
+          <h2>Stay Connected</h2>
+          <!-- nav tag is used to add navigations -->
+          <nav>
+            <ul>
+              <li>
+                <!-- Social Media Link to Facebook -->
+                <a href="#"><img src="assets/images/facebook.svg" alt="Facebook" /></a>
+              </li>
+              <li>
+                <!-- Social Media Link to Youtube -->
+                <a href="#"><img src="assets/images/youtube.svg" alt="Youtube" /></a>
+              </li>
+              <li>
+                <!-- Social Media Link to Instagram -->
+                <a href="#"><img src="assets/images/instagram.svg" alt="Instagram" /></a>
+              </li>
+              <li>
+                <!-- Social Media Link to Twitter -->
+                <a href="#"><img src="assets/images/twitter.svg" alt="Twitter" /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="copyrights-container">
+          <a href="/"><img src="./assets/images/aftermath_logo.png" alt="Aftermath Logo" /></a>
+          <nav>
+            <!-- Footer Navigation -->
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./news.html">News</a></li>
+              <li><a href="./pedals.html">Pedals</a></li>
+              <li><a href="./plugins.html">Plugins</a></li>
+            </ul>
+          </nav>
+          <!-- Copyrights text -->
+          <p>© 2022 Aftermath</p>
+        </div>
+
+        <div class="contact-container">
+          <p>
+            Would you like to advertise your product? Please call
+            our advisers at
+          </p>
+          <a href="tel:+999999999">654 - 532 - 1223</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+
+  <script src="assets/scripts/index.js"></script>
+</body>
+<!-- end of body -->
+
+</html>
+<!-- end of page -->
