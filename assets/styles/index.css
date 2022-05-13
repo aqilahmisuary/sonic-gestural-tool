@@ -591,7 +591,7 @@ video {
 */
 
 #plugin-banner {
-  background: url(https://github.com/aqilahmisuary/sonic-gestural-tool/blob/main/assets/images/plugin-banner.png);
+  background: url(../assets/images/plugin-banner.png);
   background-size: cover;
   background-position: 50% 50%;
 }
