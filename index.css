@@ -524,8 +524,8 @@ img.search-icon-img {
 */
 
 video {
-  width: 600px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
 }
 
 .videos {
@@ -672,7 +672,7 @@ video {
 }
 
 .home .aftermath-banner .aftermath-info-box {
-  width: 500px;
+  width: 100%;
   max-width: 100%;
   padding: 11% 0;
 }
